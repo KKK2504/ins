@@ -1,0 +1,14 @@
+<div *ngIf="loggedInUser">
+    <h1>Welcome {{ loggedInUser.name }}</h1>
+    <h2>Your Details:</h2>
+    <ul>
+      <li><strong>Name:</strong> {{ loggedInUser.name }}</li>
+      <li><strong>Email:</strong> {{ loggedInUser.email }}</li>
+      <li><strong>Policy Number:</strong> {{ loggedInUser.policyNumber }}</li>
+      <!-- Add more details as needed -->
+    </ul>
+  </div>
+  <div *ngIf="!loggedInUser">
+    <app-login (login)="onLogin($event)"></app-login>
+  </div>
+  

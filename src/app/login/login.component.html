@@ -1,0 +1,28 @@
+<form (ngSubmit)="login()">
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="user.username" name="username" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="user.password" name="password" required>
+    </div>
+    <div>
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" [(ngModel)]="user.customerName" name="customerName" required>
+    </div>
+    <div>
+      <label for="companyName">Company Name:</label>
+      <input type="text" id="companyName" [(ngModel)]="user.companyName" name="companyName" required>
+    </div>
+    <div>
+      <label for="companyId">Company ID:</label>
+      <input type="text" id="companyId" [(ngModel)]="user.companyId" name="companyId" required>
+    </div>
+    <div>
+      <label for="policyDetails">Policy Details:</label>
+      <textarea id="policyDetails" [(ngModel)]="user.policyDetails" name="policyDetails" required></textarea>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+  
